@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#quote-box{
+  background-color: #fff;
+  width:40rem;
+  margin:10rem auto;
+  border-radius:5px;
+  padding:3rem;
+}
+#text{
+  font-size:2rem;
+  margin-bottom:1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#author{
+  display:flex;
+  justify-content:flex-end;
+  font-size:1.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#buttons{
+  display:flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top:2rem ;
 }
 
-.App-link {
-  color: #61dafb;
+.social-media{
+  display:flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.social-media > a img{
+  margin-right:.5rem;
+  background-color:black ;
+  padding:.3rem .5rem;
+  cursor:pointer;
+  border-radius:3px;
+}
+
+.social-media > a img:hover{
+  opacity: 0.9;
+}
+
+.social-media > a img{
+  width:1.5rem;
+}
+
+#new-quote{
+  background:black;
+  border:none;
+  color: #fff;
+  padding: .7rem 1rem;
+  font-size:.9rem;
+  font-weight:bold;
+  border-radius: 2px;
+  outline:none;
+  cursor:pointer;
+}
+#new-quote:hover{
+  opacity:0.9;
 }
